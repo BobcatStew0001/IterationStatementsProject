@@ -17,6 +17,8 @@ namespace IterationStatements
 
             //TODO - Create a variable of type int and name it "num"
             //TODO - Initialize the variable with a value of 0
+            int num = 0;
+
 
 
 
@@ -26,11 +28,11 @@ namespace IterationStatements
             // a) Increment "num" by 1
             // b) Then add "num" to the collection "numbers"
             //    Hint: Use "numbers.Add(num);" to add the current value of "num" to the list.
-
+            do
             {
-                // Your code goes here
-                numbers.Add(/*num*/); //uncomment out `num` to add it to the collection "numbers"
-            } 
+                Console.WriteLine(num++);
+                numbers.Add(num); //uncomment out `num` to add it to the collection "numbers"
+            } while (num < 100);
             //TODO - Continue the loop while "num" is less than 100
             
 
@@ -41,9 +43,10 @@ namespace IterationStatements
             // a) Increment "num" by 1
             // b) Then add "num" to the collection "numbers"
             //    Hint: You can copy how this was done in the do-while loop
-
+            while(num < 200)
             {
-                // Your code goes here
+                Console.WriteLine(num++);
+                numbers.Add(num);
             }
             
 
@@ -55,6 +58,11 @@ namespace IterationStatements
             //TODO - Create a foreach loop using the existing brackets as a template.
             // The existing brackets are placeholders for your loop code.
             // Inside this loop, print each number in "numbers".
+            foreach(int i in numbers)
+            {
+                Console.WriteLine(i);
+                
+            }
             {
                 // Your code goes here
             }
