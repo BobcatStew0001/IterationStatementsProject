@@ -32,7 +32,9 @@ namespace IterationStatements
             {
                 num++;
                 numbers.Add(num);
-            }while(num<100);
+
+            } 
+            while (num < 100); 
             
                
             //TODO - Continue the loop while "num" is less than 100
