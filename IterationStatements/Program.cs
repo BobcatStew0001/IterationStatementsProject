@@ -17,7 +17,7 @@ namespace IterationStatements
 
             //TODO - Create a variable of type int and name it "num"
             //TODO - Initialize the variable with a value of 0
-            int num = 0;
+            var num = 0;
 
 
 
@@ -30,9 +30,11 @@ namespace IterationStatements
             //    Hint: Use "numbers.Add(num);" to add the current value of "num" to the list.
             do
             {
-                Console.WriteLine(num++);
-                numbers.Add(num); //uncomment out `num` to add it to the collection "numbers"
-            } while (num < 100);
+                num++;
+                numbers.Add(num);
+            }while(num<100);
+            
+               
             //TODO - Continue the loop while "num" is less than 100
             
 
@@ -45,7 +47,7 @@ namespace IterationStatements
             //    Hint: You can copy how this was done in the do-while loop
             while(num < 200)
             {
-                Console.WriteLine(num++);
+                num++;
                 numbers.Add(num);
             }
             
@@ -58,16 +60,11 @@ namespace IterationStatements
             //TODO - Create a foreach loop using the existing brackets as a template.
             // The existing brackets are placeholders for your loop code.
             // Inside this loop, print each number in "numbers".
-            foreach(int i in numbers)
+            foreach(var number in numbers)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(number);
                 
             }
-            {
-                // Your code goes here
-            }
-             
-
 
             Console.WriteLine("");
             Console.WriteLine("Decrease:");
@@ -82,7 +79,7 @@ namespace IterationStatements
             //    - Less than or equal to the number of items in "numbers" (use "numbers.Count")
             //    - Greater than or equal to 0
             // c) Decrement "i" by 1 in each iteration
-
+            for(var i = 199; i<=numbers.Count && i >= 0; i --)
             {
                 //TODO - Inside the loop, place numbers[i] inside of the Console.WriteLine() method
                 Console.WriteLine(numbers[i]); // Example placement of numbers[i] inside Console.WriteLine
